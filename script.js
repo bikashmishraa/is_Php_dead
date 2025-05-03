@@ -11,7 +11,7 @@ form.addEventListener("submit", async function (event) {
     // alert("Message submitted: " + message);
     
     let xhr = new XMLHttpRequest();
-    xhr.open("POST","./index.php",true); // sending post request to index.php file so that it can be processed by the server
+    xhr.open("POST","https://bikashmishraa.github.io/is_Php_dead/index.php",true); // sending post request to index.php file so that it can be processed by the server
     xhr.onload = () =>{
         if(xhr.readyState == 4 && xhr.status == 200){
             let response =  xhr.response; // wait for the response from the server
